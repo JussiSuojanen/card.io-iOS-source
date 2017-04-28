@@ -1,6 +1,10 @@
 card.io iOS SDK release notes
 =============================
 
+5.4.3 (Wed 3/05/2017)
+
+* Add Lithuanian, Latvian and Estonian localization to CardIO
+
 5.4.2 (Thu 09/03/2017)
 
 * Add finnish localization to CardIO
