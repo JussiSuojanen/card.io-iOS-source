@@ -268,6 +268,7 @@
 		A553B70D1BE32273006DF551 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E9618E319C8EBCB0023CDBB /* MobileCoreServices.framework */; };
 		A553B7161BE322A1006DF551 /* CardIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92263D701B83ACBB003FE678 /* CardIO.framework */; };
 		A553B7171BE322A1006DF551 /* CardIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92263D701B83ACBB003FE678 /* CardIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F41B6D261EB319670078A487 /* lt.strings in Resources */ = {isa = PBXBuildFile; fileRef = F41B6D251EB319670078A487 /* lt.strings */; };
 		F4A16EC21D8846EA001DC8BE /* fi.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4A16EC11D8846EA001DC8BE /* fi.strings */; };
 /* End PBXBuildFile section */
 
@@ -848,6 +849,7 @@
 		D1EA4591156B1A560091C829 /* image_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_util.h; sourceTree = "<group>"; };
 		D1F66D66146456880001F15F /* CardIOTransitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOTransitionView.h; sourceTree = "<group>"; };
 		D1F66D67146456880001F15F /* CardIOTransitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardIOTransitionView.m; sourceTree = "<group>"; };
+		F41B6D251EB319670078A487 /* lt.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = lt.strings; path = assets/strings/lt.strings; sourceTree = SOURCE_ROOT; };
 		F4A16EC11D8846EA001DC8BE /* fi.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = fi.strings; path = assets/strings/fi.strings; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -1886,6 +1888,7 @@
 				3E013400198ADC7D009E579A /* zh-Hans.strings */,
 				3E013401198ADC7D009E579A /* zh-Hant_TW.strings */,
 				3E013402198ADC7D009E579A /* zh-Hant.strings */,
+				F41B6D251EB319670078A487 /* lt.strings */,
 			);
 			name = Strings;
 			path = strings/projects/card.io/Strings;
@@ -2170,6 +2173,9 @@
 					92263D6F1B83ACBB003FE678 = {
 						CreatedOnToolsVersion = 7.0;
 					};
+					A553B6E51BE32273006DF551 = {
+						LastSwiftMigration = 0830;
+					};
 				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "icc" */;
@@ -2251,6 +2257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41B6D261EB319670078A487 /* lt.strings in Resources */,
 				A553B6E91BE32273006DF551 /* MainWindow.xib in Resources */,
 				A553B6EA1BE32273006DF551 /* RootViewController.xib in Resources */,
 				A553B6EB1BE32273006DF551 /* green_button@2x.png in Resources */,
@@ -2602,6 +2609,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A50A54B41BE2F7A800B669FB /* icc_Debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -2609,6 +2620,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A50A54B51BE2F7A800B669FB /* icc_Release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -2616,6 +2630,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A50A54B31BE2F7A800B669FB /* icc_AdHoc.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SWIFT_VERSION = 3.0;
 			};
 			name = AdHoc;
 		};
