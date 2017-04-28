@@ -270,6 +270,7 @@
 		A553B7171BE322A1006DF551 /* CardIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92263D701B83ACBB003FE678 /* CardIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F41B6D261EB319670078A487 /* lt.strings in Resources */ = {isa = PBXBuildFile; fileRef = F41B6D251EB319670078A487 /* lt.strings */; };
 		F41B6D281EB31F800078A487 /* lv.strings in Resources */ = {isa = PBXBuildFile; fileRef = F41B6D271EB31F800078A487 /* lv.strings */; };
+		F41B6D2A1EB3246E0078A487 /* et.strings in Resources */ = {isa = PBXBuildFile; fileRef = F41B6D291EB3246E0078A487 /* et.strings */; };
 		F4A16EC21D8846EA001DC8BE /* fi.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4A16EC11D8846EA001DC8BE /* fi.strings */; };
 /* End PBXBuildFile section */
 
@@ -852,6 +853,7 @@
 		D1F66D67146456880001F15F /* CardIOTransitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardIOTransitionView.m; sourceTree = "<group>"; };
 		F41B6D251EB319670078A487 /* lt.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = lt.strings; path = assets/strings/lt.strings; sourceTree = SOURCE_ROOT; };
 		F41B6D271EB31F800078A487 /* lv.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = lv.strings; path = assets/strings/lv.strings; sourceTree = SOURCE_ROOT; };
+		F41B6D291EB3246E0078A487 /* et.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = et.strings; path = assets/strings/et.strings; sourceTree = SOURCE_ROOT; };
 		F4A16EC11D8846EA001DC8BE /* fi.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = fi.strings; path = assets/strings/fi.strings; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -1892,6 +1894,7 @@
 				3E013402198ADC7D009E579A /* zh-Hant.strings */,
 				F41B6D251EB319670078A487 /* lt.strings */,
 				F41B6D271EB31F800078A487 /* lv.strings */,
+				F41B6D291EB3246E0078A487 /* et.strings */,
 			);
 			name = Strings;
 			path = strings/projects/card.io/Strings;
@@ -2288,6 +2291,7 @@
 				A553B6FF1BE32273006DF551 /* simulated_camera_3.png in Resources */,
 				A553B7001BE32273006DF551 /* simulated_camera_4.png in Resources */,
 				A553B7011BE32273006DF551 /* simulated_camera_5.png in Resources */,
+				F41B6D2A1EB3246E0078A487 /* et.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
